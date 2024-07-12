@@ -2,16 +2,26 @@ const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100){
-            console.log("hola")
-            $("#index").addClass("bg-dark"); 
-        }else {
-            $("#index").removeClass("bg-dark"); 
-        }
-    });
-}); 
+// $(document).ready(function(){
+//     $(window).scroll(function(){
+//         if ($(this).scrollTop() > 100){
+//             console.log("hola")
+//             $("#index").addClass("bg-dark"); 
+//         }else {
+//             $("#index").removeClass("bg-dark"); 
+//         }
+//     });
+// }); 
+
+window.addEventListener("scroll", function(){
+    var navbar = document.getElementById("navbar");
+    if (window.scrollY > 0){
+        // $("navbar").add()
+        navbar.addClass("bg-custom-dark");
+    }else{
+        navbar.classList.remove("bg-custom-dark");
+    }
+});
 
 $(function () {
     $("#enviar").click(function () {
