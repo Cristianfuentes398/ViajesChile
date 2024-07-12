@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.carousel-inner{
+    max-height:80vh;
+}
+.section2 i{
+    text-align:center;
+}
+
+.card-img-top{
+    
+    height:176px;
+}
+.footerfinal{
+    padding-left:100px;
+    padding-top:15px;
+}
+.icon-link{
+    font-size:30px;
+    padding-left:50%;
+    
+}
+.card-body{
+    height:60%
+}
+
